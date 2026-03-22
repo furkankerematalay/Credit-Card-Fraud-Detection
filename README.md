@@ -28,4 +28,14 @@ In fraud detection, **Accuracy is a trap.** If the model says "everything is nor
 ## 🛠️ Tech Stack
 *   **Environment:** Python (Jupyter Notebook)
 *   **Libraries:** `Scikit-Learn`, `Pandas`, `Imbalanced-Learn` (for SMOTE), `Seaborn`.
-*   **Algorithms:** Random Forest / Logistic Regression / XGBoost [Hangisini kullandıysan seç].
+*   **Algorithms:** Random Forest / Logistic Regression / XGBoost
+
+## 📊 Model Evaluation & Confusion Matrix
+To truly assess the model's ability to detect rare fraudulent events, I utilized a **Confusion Matrix**. This visualizes the True Positives (Frauds correctly identified) versus False Negatives (Frauds missed).
+
+![Confusion Matrix](./confusion_matrix.PNG)
+
+### Key Performance Metrics:
+* **Precision:** How many of the flagged transactions were actually fraudulent?
+* **Recall (Sensitivity):** What percentage of all actual fraudulent transactions did the model successfully find?
+* **F1-Score:** The harmonic mean of Precision and Recall, providing a balanced measure.
